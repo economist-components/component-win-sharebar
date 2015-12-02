@@ -1,0 +1,47 @@
+@import '@economist/component-icon';
+@import '@economist/component-palette';
+@import '@economist/component-toggle-display';
+@import '@economist/component-sharebar';
+
+.win-sharebar {
+  position: relative;
+}
+
+.win-sharebar .toggle-display__link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 49px;
+}
+
+.win-sharebar .toggle-display__content {
+  position: absolute;
+  top: 49px;
+  right: 0;
+}
+
+.win-sharebar [data-display="open"] .toggle-display__link {
+  height: 50px;
+  z-index: 10;
+}
+
+.win-sharebar [data-display="open"] .toggle-display__content {
+  border-top: 1px solid white;
+}
+
+@media screen and (min-width: 650px) {
+  .win-sharebar .toggle-display__content {
+    top: 0;
+    right: 50px;
+  }
+
+  .win-sharebar [data-display="open"] .toggle-display__link {
+    height: 49px;
+  }
+
+  .win-sharebar [data-display="open"] .toggle-display__content {
+    border: 0 none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+}
