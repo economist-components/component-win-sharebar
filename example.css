@@ -9,27 +9,36 @@
   display: table;
 }
 
-.header__home {
+.header__home,
+.header__hamburger {
   width: 49px;
   background: var(--color-economist);
   vertical-align: middle;
   text-align: center;
 }
 
-.header__home use {
+.header__home use,
+.header__hamburger use {
   fill: white;
+}
+
+.header__home {
+  border-right: 1px solid var(--color-thimphu);
+  border-left: 1px solid var(--color-thimphu);
 }
 
 .header__spacer {
   background: var(--color-beijing);
-  width: calc(100% - (49px*2));
+  width: 100%;
 }
 
 .header__share {
   width: 49px;
+  min-width: 49px;
 }
 
 .header__home,
+.header__hamburger,
 .header__spacer,
 .header__share {
   display: table-cell;

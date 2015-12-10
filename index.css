@@ -10,14 +10,30 @@
 .win-sharebar .toggle-display__content {
   position: absolute;
   top: 49px;
-  right: 0;
+  right: -99px;
 }
 
 .win-sharebar [data-display="open"] .toggle-display__content {
   border-top: 1px solid var(--color-thimphu);
 }
 
+.win-sharebar .toggle-display[data-display="open"] .toggle-display__button {
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.win-sharebar .toggle-display[data-display="open"] .toggle-display__content {
+  border-top: solid 1px var(--color-thimphu);
+}
+
 @media screen and (min-width: 650px) {
+  .win-sharebar .share__icon--whatsapp {
+    display: none;
+  }
+
   .win-sharebar .toggle-display__content {
     top: 0;
     right: 50px;
@@ -35,5 +51,10 @@
     border: 0 none;
     border-left: 1px solid var(--color-thimphu);
     border-right: 1px solid var(--color-thimphu);
+  }
+
+  .win-sharebar .toggle-display[data-display="open"] .toggle-display__button {
+    position: static;
+    height: 49px;
   }
 }
