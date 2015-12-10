@@ -29,7 +29,7 @@
   border-top: solid 1px var(--color-thimphu);
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 620px) {
   .win-sharebar .share__icon--whatsapp {
     display: none;
   }
@@ -47,7 +47,7 @@
     background-color: var(--color-kiev);
   }
 
-  .win-sharebar [data-display="open"] .toggle-display__content {
+  .win-sharebar .toggle-display[data-display="open"] .toggle-display__content {
     border: 0 none;
     border-left: 1px solid var(--color-thimphu);
     border-right: 1px solid var(--color-thimphu);
